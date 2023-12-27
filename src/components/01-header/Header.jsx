@@ -31,11 +31,10 @@ const Header = () => {
 
       <nav>
         <ul className="flex">
-          <li>
-            <a href="">About</a>
-          </li>
-
-          <li>
+        <li>
+              <a href="">About</a>
+            </li>
+            <li>
               <a href="">Projects</a>
             </li>
             <li>

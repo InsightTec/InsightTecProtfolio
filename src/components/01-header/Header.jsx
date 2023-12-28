@@ -38,10 +38,10 @@ const Header = () => {
               <a href="">Projects</a>
             </li>
             <li>
-              <a href="">Future Projects</a>
+              <a href="">Services</a>
             </li>
             <li>
-              <a href="">Our Team</a>
+              <a href="">Team</a>
             </li>
             <li>
               <a href="">Technologies </a>
@@ -90,10 +90,10 @@ const Header = () => {
               <a href="">Projects</a>
             </li>
             <li>
-              <a href="">Future Projects</a>
+              <a href="">Services</a>
             </li>
             <li>
-              <a href="">Our Team</a>
+              <a href="">Team</a>
             </li>
             <li>
               <a href="">Technologies </a>

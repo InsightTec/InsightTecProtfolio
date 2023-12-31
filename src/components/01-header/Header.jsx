@@ -5,7 +5,7 @@ const currentLcationColor = '#5dbcfc'
 const Header = () => {
 
   const currentLocation = useLocation();
-   console.log('currentLocation',currentLocation.pathname)
+  console.log('currentLocation', currentLocation.pathname.split('/'))
   const [showModal, setshowModal] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("currentMode") ?? "dark"
@@ -42,17 +42,17 @@ const Header = () => {
         <ul className="flex">
           <li>
             <Link to='home'>
-              <a href=""  style={currentLocation.pathname === '/home' || currentLocation.pathname === '/' ? { color: currentLcationColor } : {}}>Home</a>
+              <a href="" style={currentLocation.pathname === '/home' || currentLocation.pathname === '/' ? { color: currentLcationColor } : {}}>Home</a>
             </Link>
           </li>
           <li>
             <Link to='projects' >
-              <a href=""  style={currentLocation.pathname === '/projects' ? { color: currentLcationColor } : {}} >Projects</a>
+              <a href="" style={currentLocation.pathname  === '/projects' || currentLocation.pathname.split('/')[1]=== 'projects' ? { color: currentLcationColor } : {}} >Projects</a>
             </Link>
           </li>
           <li>
             <Link to='services'>
-              <a href=""  style={currentLocation.pathname === '/services' ? { color: currentLcationColor } : {}}>Services</a>
+              <a href="" style={currentLocation.pathname === '/services' ? { color: currentLcationColor } : {}}>Services</a>
             </Link>
           </li>
           <li>
@@ -62,12 +62,12 @@ const Header = () => {
           </li>
           <li>
             <Link to='technologies'>
-              <a href=""  style={currentLocation.pathname === '/technologies' ? { color: currentLcationColor } : {}}>Technologies </a>
+              <a href="" style={currentLocation.pathname === '/technologies' ? { color: currentLcationColor } : {}}>Technologies </a>
             </Link>
           </li>
           <li>
             <Link to='articles'>
-              <a href=""  style={currentLocation.pathname === '/articles' ? { color: currentLcationColor } : {}}>Articles</a>
+              <a href="" style={currentLocation.pathname === '/articles' ? { color: currentLcationColor } : {}}>Articles</a>
             </Link>
           </li>
         </ul>

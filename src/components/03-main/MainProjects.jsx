@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./main.css";
 import { myProjects } from "../../data/myProjects";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
@@ -17,7 +18,7 @@ const Main = () => {
 
 
       // return ZZZ === buttonCategory;
-      console.log('buttonCategory',buttonCategory)
+      console.log('buttonCategory', buttonCategory)
       return item.category.includes(buttonCategory);
     });
 
@@ -43,7 +44,7 @@ const Main = () => {
           }}
           className={currentActive === "web" ? "active" : null}
         >
-        Web development
+          Web development
         </button>
 
         <button
@@ -70,7 +71,7 @@ const Main = () => {
         >
           Desktop
         </button>
-        
+
 
       </section>
 
@@ -91,7 +92,7 @@ const Main = () => {
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.title}</h1>
                   <p className="sub-title">
-                  {item.shortDescription}
+                    {item.shortDescription}
                   </p>
 
                   <div className="flex icons">
@@ -99,14 +100,16 @@ const Main = () => {
                       <div className="icon-link"></div>
                       <div className="icon-github"></div>
                     </div>
+                    <Link to={`/projects/${item.id}`}>
+                      <a className="link flex" href="">
+                        more
+                        <span
+                          style={{ alignSelf: "end" }}
+                          className="icon-arrow-right"
+                        ></span>
+                      </a>
+                    </Link>
 
-                    <a className="link flex" href="">
-                      more
-                      <span
-                        style={{ alignSelf: "end" }}
-                        className="icon-arrow-right"
-                      ></span>
-                    </a>
                   </div>
                 </div>
               </motion.article>

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
 import Projects from './pages/projects/Projects.jsx';
+import ProjectDetails from './pages/projects/projectDetails.jsx';
 import Services from './pages/services/Services.jsx';
 import Team from './pages/team/Team.jsx';
 import About from './pages/techonlogies/Techonlogies.jsx';
@@ -24,11 +25,14 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />      
       <Route path='home' element={<Home />} />      
     <Route path="projects" element={<Projects />} />
+    <Route path="projects/:projectId" element={<ProjectDetails />} />
     <Route path="services" element={<Services />} />
   
     <Route path="technologies" element={<Techonlogies />} />
       <Route path="team" element={<Team />} />
         <Route path="articles" element={<Articles />} />
+          {/* if path not found */} 
+        <Route path="*" element={<Home />} />
       {/* ... etc. */}
     </Route>
   )

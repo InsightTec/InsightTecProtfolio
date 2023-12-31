@@ -5,7 +5,7 @@ export const myProjects = [
       category: ["web"],
       technologies:['react'],
       shortDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
-      longDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
+      longDescription:'this project provide us .... <br/><ul><li>High quality</li></ul><h1>Lorem ipsum :</h1>dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
       
       imgPath: "./images/1.jpg",
       link:'https://www.google.com',
@@ -20,7 +20,7 @@ export const myProjects = [
         category: ["web"],
         technologies:['react'],
         shortDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
-        longDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
+        longDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
         
         imgPath: "./images/1.jpg",
         link:'https://www.google.com',
@@ -110,7 +110,7 @@ export const myProjects = [
         category: ["desktop"],
         technologies:['.net'],
         shortDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
-        longDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
+        longDescription:'Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.',
         
         imgPath: "./images/4.jpg",
         link:'https://www.google.com',

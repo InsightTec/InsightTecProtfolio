@@ -8,7 +8,7 @@ const SubHero = () => {
   const lottieRef = useRef();
 
   return (
-    <section className="hero flex" style={{marginBottom:30}}>
+    <section className="hero flex" style={{marginBottom:20}}>
       <div className="left-section  ">
         <div className="parent-avatar flex">
           <motion.img

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./main.css";
-import { myProjects } from "./myProjects";
+import { myProjects } from "../../data/myProjects";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Main = () => {
@@ -15,9 +15,10 @@ const Main = () => {
       //   return myItem === buttonCategory;
       // });
 
+
       // return ZZZ === buttonCategory;
       console.log('buttonCategory',buttonCategory)
-      return item.category.includes(buttonCategory);
+      return item.technologies.includes(buttonCategory);
     });
 
     setArr(newArr);
@@ -33,7 +34,7 @@ const Main = () => {
           }}
           className={currentActive === "all" ? "active" : null}
         >
-          all projects
+          all Technologies
         </button>
 
         <button
@@ -92,6 +93,14 @@ const Main = () => {
           className={currentActive === "go" ? "active" : null}
         >
           Go
+        </button>
+        <button
+          onClick={() => {
+            handleClick("wordpress");
+          }}
+          className={currentActive === "wordpress" ? "active" : null}
+        >
+          CMS(Wordpress)
         </button>
       </section>
 

@@ -5,7 +5,8 @@ import doneAnimation from "../../animation/done.json";
 import contactAnimation from "../../animation/contact.json";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xrgvvdlo");
+
+  const [state, handleSubmit] = useForm("mleqergg");
 
   return (
     <section className="contact-us">
@@ -36,6 +37,23 @@ const Contact = () => {
             />
           </div>
 
+          <div className="flex" style={{marginTop:10}}>
+            <label htmlFor="phone" style={{marginRight:28}}>Whatsapp :</label>
+            <input
+              autoComplete="off"
+              required
+              type="phone"
+              name="phone"
+              id="phone"
+            />
+            <ValidationError
+              prefix="Phone"
+              field="phone"
+              errors={state.errors}
+            />
+          </div>
+
+
           <div className="flex" style={{ marginTop: "24px" }}>
             <label htmlFor="message">Your message:</label>
             <textarea required name="message" id="message"></textarea>
@@ -60,7 +78,7 @@ const Contact = () => {
                 style={{ height: 37 }}
                 animationData={doneAnimation}
               />
-              Your message has been sent successfully 👌
+              Your message has been sent successfully.
             </p>
           )}
         </form>

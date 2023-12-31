@@ -21,7 +21,8 @@ section.contact-us .icon-envelope {
   }
   
   section.contact-us #email,
-  section.contact-us #message {
+  section.contact-us #message,
+  section.contact-us #phone{
     all: unset;
     background-color: rgba(63, 63, 70, 0.15);
     border: 1px solid rgb(63 63 70);
@@ -34,7 +35,8 @@ section.contact-us .icon-envelope {
   }
   
   .light section.contact-us #email,
-  .light section.contact-us #message {
+  .light section.contact-us #message,
+  .light section.contact-us #phone {
     background-color: rgba(255, 255, 255, 0.162);
     border: 1px solid rgba(128, 128, 128, 0.451);
     box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
@@ -43,15 +45,19 @@ section.contact-us .icon-envelope {
   
   section.contact-us #email:focus,
   section.contact-us #message:focus,
+  section.contact-us #phone:focus,
   section.contact-us #email:hover,
-  section.contact-us #message:hover {
+  section.contact-us #message:hover,
+  section.contact-us #phone:hover {
     border: 1px solid rgb(45 212 191);
   }
   
   .light section.contact-us #email:focus,
   .light section.contact-us #message:focus,
+  .light section.contact-us #phone:focus,
   .light section.contact-us #email:hover,
-  .light section.contact-us #message:hover {
+  .light section.contact-us #message:hover ,
+  .light section.contact-us #phone:hover {
     border: 1px solid rgb(78, 80, 80);
   }
   
@@ -108,7 +114,8 @@ section.contact-us .icon-envelope {
     }
   
     section.contact-us #email,
-    section.contact-us #message {
+    section.contact-us #message,
+    section.contact-us #phone{
       width: 100%;
       margin-left: 0;
       padding: 0.7rem 0;

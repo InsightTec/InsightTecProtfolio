@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./header.css";
-
+const currentLcationColor = '#5dbcfc'
 const Header = () => {
+
+  const currentLocation = useLocation();
+   console.log('currentLocation',currentLocation.pathname)
   const [showModal, setshowModal] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("currentMode") ?? "dark"
@@ -17,6 +21,11 @@ const Header = () => {
     }
   }, [theme]);
 
+  const handleClick = () => {
+    console.log('kkk')
+    setshowModal(false);
+  };
+
   return (
     <header className="  flex">
       <button
@@ -31,24 +40,36 @@ const Header = () => {
 
       <nav>
         <ul className="flex">
-        <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">Team</a>
-            </li>
-            <li>
-              <a href="">Technologies </a>
-            </li>
-            <li>
-              <a href="">Articles</a>
-            </li>
+          <li>
+            <Link to='home'>
+              <a href=""  style={currentLocation.pathname === '/home' || currentLocation.pathname === '/' ? { color: currentLcationColor } : {}}>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link to='projects' >
+              <a href=""  style={currentLocation.pathname === '/projects' ? { color: currentLcationColor } : {}} >Projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link to='services'>
+              <a href=""  style={currentLocation.pathname === '/services' ? { color: currentLcationColor } : {}}>Services</a>
+            </Link>
+          </li>
+          <li>
+            <Link to='team'>
+              <a href="" style={currentLocation.pathname === '/team' ? { color: currentLcationColor } : {}}>Team</a>
+            </Link>
+          </li>
+          <li>
+            <Link to='technologies'>
+              <a href=""  style={currentLocation.pathname === '/technologies' ? { color: currentLcationColor } : {}}>Technologies </a>
+            </Link>
+          </li>
+          <li>
+            <Link to='articles'>
+              <a href=""  style={currentLocation.pathname === '/articles' ? { color: currentLcationColor } : {}}>Articles</a>
+            </Link>
+          </li>
         </ul>
       </nav>
 
@@ -84,22 +105,34 @@ const Header = () => {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <Link to='home' onClick={handleClick}>
+                <a href="" >Home</a>
+              </Link>
             </li>
             <li>
-              <a href="">Projects</a>
+              <Link to='projects' onClick={handleClick}>
+                <a href="">Projects</a>
+              </Link>
             </li>
             <li>
-              <a href="">Services</a>
+              <Link to='services' onClick={handleClick}>
+                <a href="">Services</a>
+              </Link>
             </li>
             <li>
-              <a href="">Team</a>
+              <Link to='team' onClick={handleClick}>
+                <a href="">Team</a>
+              </Link>
             </li>
             <li>
-              <a href="">Technologies </a>
+              <Link to='technologies' onClick={handleClick}>
+                <a href="">Technologies </a>
+              </Link>
             </li>
             <li>
-              <a href="">Articles</a>
+              <Link to='articles' onClick={handleClick}>
+                <a href="">Articles</a>
+              </Link>
             </li>
           </ul>
         </div>
